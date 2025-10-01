@@ -7,7 +7,21 @@ public class IBANValidator {
         System.out.println("Enter the IBAN");
         String ibanInput = scanner.nextLine().replaceAll("\\s", "");
 
-        // Write your solution to Task 2 here
+        public static void checkusingdigit(ibanInput){
+            boolean isValid = true;
+            int startindex= 0;
+
+            for (int i =startindex; i<ibanInput.length(); i++){
+                if (!Character.digit(ibanInput.charAt(i))){
+                    isValid = false;
+                    System.out.println('Invalid IBAN');
+                }
+            }
+
+        }
+
+        
+
 
         scanner.close();
     }
