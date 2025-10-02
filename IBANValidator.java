@@ -7,6 +7,7 @@ public class IBANValidator {
         System.out.println("Enter the IBAN");
         String ibanInput = scanner.nextLine().replaceAll("\\s", "");
 
+        //2.
         public static void checkusingdigit(ibanInput){
             boolean isValid = true;
             int startindex= 0;
@@ -17,20 +18,36 @@ public class IBANValidator {
                     System.out.println("Invalid IBAN");
                     return;
                 } else {
-                    public static String movefistfourtolast(ibanInput) {
-                        if (ibanInput.length()>4);
-                            String firstfour = ibanInput.substring(0, 4);
-                            String rest = ibanInput.substring(4);
+                    //3.
+                    if (ibanInput.length()>4);
+                        String firstfour = ibanInput.substring(0, 4);
+                        String rest = ibanInput.substring(4);
 
-                            return rest+firstfour;
+                        return rest+firstfour;
 
                     }
                 }
-                    
+                        //4.
+                        for (int i = 0; i< ibanInput.length(); i++){
+                            char c = ibanInput.charAt(i);
+                            if (Character.isDigit(c)){
+                                result.append(c)
+                            } else(Charaer.isUpperCase(c)){
+                                int value = c-'A'+10
+                                result.append(value);
+                            }
+
+                            }
+                        
+                        }
+
+
                 
             }
 
-            
+
+
+
 
         }
 
