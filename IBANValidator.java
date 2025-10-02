@@ -16,8 +16,21 @@ public class IBANValidator {
                     isValid = false;
                     System.out.println("Invalid IBAN");
                     return;
+                } else {
+                    public static String movefistfourtolast(ibanInput) {
+                        if (ibanInput.length()>4);
+                            String firstfour = ibanInput.substring(0, 4);
+                            String rest = ibanInput.substring(4);
+
+                            return rest+firstfour;
+
+                    }
                 }
+                    
+                
             }
+
+            
 
         }
 
