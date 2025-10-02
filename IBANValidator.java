@@ -12,9 +12,10 @@ public class IBANValidator {
             int startindex= 0;
 
             for (int i =startindex; i<ibanInput.length(); i++){
-                if (!Character.digit(ibanInput.charAt(i))){
+                if (!Character.isDigit(c) :: Character.isUpperCase(c)){
                     isValid = false;
-                    System.out.println('Invalid IBAN');
+                    System.out.println("Invalid IBAN");
+                    return;
                 }
             }
 
